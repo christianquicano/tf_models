@@ -64,7 +64,7 @@ FLAGS = flags.FLAGS
 def main(unused_argv):
 
   # Setear la memoria para los gpus
-  opts = tf.GPUOptions(per_process_gpu_memory_fraction=0.7)
+  opts = tf.GPUOptions(per_process_gpu_memory_fraction=0.8)
   sess = tf.Session(config=tf.ConfigProto(gpu_options=opts))
 
   # Utilizar GPU
